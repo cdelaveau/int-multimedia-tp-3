@@ -1,0 +1,54 @@
+body {
+    background-color: black;
+} 
+header{
+    position: relative;
+    width: 100%;
+    height: 20%;
+    background-color: transparent;
+}
+h1 {
+    color: yellow;
+}
+p::first-letter {
+    font-size: x-large;
+    color: orange;
+}
+
+img {
+    transform: rotate(-10deg) translateX(40vw) translateY(8vw);
+    width: 25vw;
+    transition: width 2s, height 2s, transform 2s;
+    display: inline-block;
+}
+img:hover {
+    width: 20vw;
+}
+section {
+    background-color: darkblue;
+    color: yellow;
+    display: inline-table;
+    vertical-align: top;
+    font-size: 20px;
+    width: 32.5%;
+}
+section:hover {
+    width: 49%;
+    font-size: 25px;
+    color: white;
+}
+@media screen and (max-width:479px) {
+    section {
+        width: 100%;
+    }
+}
+@media screen and (min-width:480px) and (max-width:719px) {
+    section {
+        width: 49%;
+    }
+}
+@media screen and (min-width:720px) {
+    section {
+        width: 32.5%;
+    }
+}
